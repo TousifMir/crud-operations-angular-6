@@ -1,7 +1,10 @@
 # About the project
 This is a sample employee management application showing basic crud operations using angular framework.
+
 Working REST full web services/APIs have been used http://dummy.restapiexample.com/
+
 We have used angular-6-datatable(Data Table) https://www.npmjs.com/package/angular-6-datatable
+
 We have used ngx-toastr(For Success/Error Messages)	https://www.npmjs.com/package/ngx-toastr
  
 
