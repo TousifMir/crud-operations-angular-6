@@ -17,7 +17,8 @@ export class AddEmployeeComponent implements OnInit {
   constructor(private dataService: DataService, private toastr:ToastrService) { }
 
   ngOnInit() {
-    // Employee Update Check
+    // Employee Update Check because, same component has been used for add & update.
+    // Some data has been stored in the data.service when update option is clicked in employee-list component
     this.isEditEmployee = this.dataService.isEmployeeUpdate;
     if(this.isEditEmployee) {
       this.employeeUpdateObj = this.dataService.empoyeeObjToUpdate;
