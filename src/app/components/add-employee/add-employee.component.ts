@@ -34,8 +34,7 @@ export class AddEmployeeComponent implements OnInit {
   addEmployee() {
     // Validate for valid inputs
     if(!this.validateFields()) {
-      return;
-      // Stop execution in case of any validation errors
+      return; // Stop execution in case of any validation errors      
     }
 
     // Create request object
@@ -47,7 +46,7 @@ export class AddEmployeeComponent implements OnInit {
 
     // Add employee api service call
     this.dataService.addEmployee(requestObject).subscribe(data => {
-      this.toastr.success("Employee Added Successfully!");
+      this.toastr.success("Employee Added Successfully!"); // success message
       // Clear form fields once the employee added successfully
       this.clearFields();
     });
