@@ -1,0 +1,19 @@
+<form ngNativeValidate> 
+  <h3>Add / Update Employee</h3>
+    <div class="form-group">
+      <label for="inputAddress">Name</label>
+      <input type="text" class="form-control" required [(ngModel)]="employeeName" name="name" placeholder="Enter Name">
+    </div>
+    <div class="form-group">
+      <label for="inputAddress2">Salary</label>
+      <input type="text" class="form-control" required [(ngModel)]="employeeSalary" name="salary" placeholder="Enter Salary">
+    </div>
+    <div class="form-group">
+      <label for="inputAddress2">Age</label>
+      <input type="text" class="form-control" required [(ngModel)]="employeeAge" name="age" placeholder="Enter Age">
+    </div>
+    <div class="form-group">
+        <button (click)="addEmployee()" *ngIf="!isEditEmployee" class="btn btn-primary">Submit</button>
+        <button (click)="updateEmployee()" *ngIf="isEditEmployee" class="btn btn-primary">Update</button>
+    </div>    
+  </form>
